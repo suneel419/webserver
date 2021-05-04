@@ -26,8 +26,7 @@ char webpage[] PROGMEM = R"=====(
 // ipaddress/led1/on
 //ipaddress/led1/off
 
-// ipaddress/led2/on
-//ipaddress/led2/off
+
 
 
 
@@ -37,7 +36,7 @@ void setup(void)
   Serial.begin(115200);
   pinMode(LED1,OUTPUT);
   
-  /*WiFi.softAP("techiesms", "");
+  /*WiFi.softAP("Esp32", "");
   Serial.println("softap");
   Serial.println("");
   Serial.println(WiFi.softAPIP());*/
