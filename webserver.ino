@@ -1,18 +1,4 @@
-/* 
- *  This example code will demonstrate the usage of webserver.
- *  It uses your wifi network and starts a server @ ip address given by your dns & dhcp.
- *  Steps.
- *  include wifi.h for wifi drivers.
- *  include wifi client to connect to accesspoints.
- *  include webserver for using webserver
- *  
- *  WebServer server(80); // define object and port for webserver.
- *  root(); contans your webpage content.parse it before using it.
- *  server.on("/inline", []() {}); // inline service methods for single line of webhosting. Param: path, string[parser]
- *  server.on("path",directory); // start server at path and define your server content using directory.
- *  server.begin(); //actually starts a server @ port
- *  server.handleClient(); //searches for client connections and handles the routing.
-*/
+
 
 #include <WiFi.h>
 #include <WiFiClient.h>
@@ -38,7 +24,7 @@ void setup() {
   Serial.begin(115200);
 
  /* 
-  WiFi.softAP("techiesms", "");
+  WiFi.softAP("Esp32", "");
   Serial.println("softap");
   Serial.println("");
   Serial.println(WiFi.softAPIP());*/
