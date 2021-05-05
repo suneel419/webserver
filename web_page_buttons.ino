@@ -1,7 +1,6 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <WebServer.h>
-#include<ESPmDNS.h>
 WebServer server(80);
 
 #define LED1 2
@@ -50,12 +49,6 @@ void setup(void)
     Serial.print(".");
   }
   Serial.println(WiFi.localIP());
-
-
-
-  if (MDNS.begin("ESP")) { //esp.local/
-    Serial.println("MDNS responder started");
-  }
 
 
 
