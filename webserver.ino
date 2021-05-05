@@ -3,7 +3,7 @@
 #include <WiFi.h>
 #include <WiFiClient.h>
 #include <WebServer.h>
-#include<ESPmDNS.h>
+
 
 const char *ssid = "sunil";
 const char *password = "8790225440";
@@ -39,9 +39,7 @@ void setup() {
   }
   Serial.println(WiFi.localIP());
 
-  if (MDNS.begin("ESP")) { //esp.local/
-    Serial.println("MDNS responder started");
-  }
+  
 
   /* uncomment to use inline webpages
      For inline webservice use this
